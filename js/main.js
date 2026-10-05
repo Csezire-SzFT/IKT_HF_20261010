@@ -1,5 +1,3 @@
-const szelesseg = window.innerWidth;
-const magassag = window.innerHeight;
 const kep = document.getElementById('smiley');
 
 function randomInt(min, max) {
@@ -7,6 +5,8 @@ function randomInt(min, max) {
 }
 
 function moveImage() {
+   const szelesseg = window.innerWidth;
+   const magassag = window.innerHeight;
    const x = randomInt(0, szelesseg - 30);
    const y = randomInt(40, magassag - 70);
    kep.style.left = `${x}px`;
